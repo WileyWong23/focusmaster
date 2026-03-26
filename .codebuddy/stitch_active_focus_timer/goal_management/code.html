@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>My Goals - Celestial Focus</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "tertiary-fixed-dim": "#ab93ff",
+                        "inverse-on-surface": "#4d556b",
+                        "secondary-fixed-dim": "#efc900",
+                        "on-tertiary": "#25006b",
+                        "on-error-container": "#ffb2b9",
+                        "outline": "#6d758c",
+                        "surface-variant": "#192540",
+                        "tertiary-container": "#7c4dff",
+                        "on-secondary-fixed-variant": "#665500",
+                        "secondary": "#ffd709",
+                        "error-container": "#a70138",
+                        "on-primary-fixed": "#003840",
+                        "primary": "#81ecff",
+                        "inverse-primary": "#006976",
+                        "surface-bright": "#1f2b49",
+                        "surface-container-high": "#141f38",
+                        "primary-container": "#00e3fd",
+                        "secondary-dim": "#efc900",
+                        "on-background": "#dee5ff",
+                        "tertiary": "#a68cff",
+                        "on-primary-fixed-variant": "#005762",
+                        "on-tertiary-fixed": "#1c0055",
+                        "surface": "#060e20",
+                        "surface-container-highest": "#192540",
+                        "on-tertiary-container": "#ffffff",
+                        "primary-fixed-dim": "#00d4ec",
+                        "surface-dim": "#060e20",
+                        "background": "#060e20",
+                        "tertiary-fixed": "#b8a3ff",
+                        "on-tertiary-fixed-variant": "#4000ad",
+                        "on-secondary-fixed": "#453900",
+                        "outline-variant": "#40485d",
+                        "on-surface": "#dee5ff",
+                        "surface-container-low": "#091328",
+                        "surface-container-lowest": "#000000",
+                        "error-dim": "#d73357",
+                        "inverse-surface": "#faf8ff",
+                        "primary-fixed": "#00e3fd",
+                        "error": "#ff6e84",
+                        "on-surface-variant": "#a3aac4",
+                        "surface-container": "#0f1930",
+                        "secondary-container": "#705d00",
+                        "on-secondary-container": "#fff7e6",
+                        "on-primary-container": "#004d57",
+                        "on-error": "#490013",
+                        "on-primary": "#005762",
+                        "surface-tint": "#81ecff",
+                        "secondary-fixed": "#ffd709",
+                        "tertiary-dim": "#7e51ff",
+                        "on-secondary": "#5b4b00",
+                        "primary-dim": "#00d4ec"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .progress-orbit {
+            background: conic-gradient(from 0deg, #a68cff, #81ecff 72%, transparent 72%);
+        }
+        .king-gradient {
+            background: linear-gradient(135deg, #ffd709, #ff6e84);
+        }
+        .primary-glow {
+            box-shadow: 0 0 20px rgba(129, 236, 255, 0.1);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="w-full top-0 sticky z-50 bg-[#060e20] dark:bg-[#060e20] flex items-center justify-between px-6 py-4 w-full">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container-high flex items-center justify-center">
+<img alt="User Profile Avatar" class="w-full h-full object-cover" data-alt="close-up portrait of a professional man with a focused expression, soft cinematic lighting, deep blue background colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmMyLmSLKvMhf5yjHMVHoftLV0YlkjCLPc6JMwIVldqcEOhjJHa1miutQSfAR37UxTLC1YBi3g2R9EoksADJjtsoSYugO-Rb69465rbZr1HsGBRucIdizmrkCucyHewbDL-r7DtOIVTLbyu9-dSm7LA2Y76iIgnvR1ypG3s7epNPk2gb_V2TSWNRm8_0GdyUvW2HwYCSkTMkvR9FVo0NcY-Ha9fdnP1Z4zKHVzCZiNWZbdMLFqZdWtg_Q8kle-bJ5mn2pAhA2fF4I"/>
+</div>
+<h1 class="font-['Manrope'] tracking-tight text-on-surface text-xl font-bold tracking-tighter text-[#81ecff]">My Goals</h1>
+</div>
+<button class="text-[#81ecff] p-2 rounded-full hover:bg-[#1f2b49] transition-colors duration-300 active:scale-95 duration-200">
+<span class="material-symbols-outlined">military_tech</span>
+</button>
+</header>
+<main class="px-6 pt-4 pb-32 max-w-4xl mx-auto space-y-8">
+<!-- Active Goal Section -->
+<section>
+<div class="flex items-center justify-between mb-4">
+<h2 class="font-headline text-on-surface text-sm uppercase tracking-widest font-bold opacity-60">Active Pursuit</h2>
+<span class="bg-primary/10 text-primary text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">In Progress</span>
+</div>
+<div class="relative group">
+<!-- Celestial Background Glow -->
+<div class="absolute -inset-1 bg-gradient-to-r from-primary/20 to-tertiary/20 rounded-3xl blur-xl opacity-50 transition duration-1000 group-hover:opacity-70"></div>
+<div class="relative bg-surface-container-low backdrop-blur-xl rounded-3xl p-8 overflow-hidden border-l-2 border-primary/30">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-8">
+<div class="flex-1 space-y-4">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 flex items-center justify-center rounded-2xl bg-secondary/10 border border-secondary/20">
+<span class="material-symbols-outlined text-secondary text-3xl" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+</div>
+<span class="font-label text-on-secondary-fixed-variant text-xs font-bold tracking-widest uppercase">Gold Rank</span>
+</div>
+<h3 class="font-headline text-2xl md:text-3xl font-extrabold text-on-surface leading-tight">Postgraduate Entrance Exam</h3>
+<div class="flex items-center gap-4 text-on-surface-variant text-sm">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span>Started Oct 12</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">trending_up</span>
+<span>+12% this week</span>
+</div>
+</div>
+</div>
+<div class="relative flex items-center justify-center">
+<!-- Progress Orbit -->
+<div class="w-32 h-32 rounded-full flex items-center justify-center relative">
+<div class="absolute inset-0 rounded-full border-4 border-surface-container-highest"></div>
+<div class="absolute inset-0 rounded-full border-4 progress-orbit opacity-80"></div>
+<div class="flex flex-col items-center">
+<span class="font-headline text-3xl font-extrabold text-on-surface">72%</span>
+<span class="text-[10px] uppercase tracking-tighter text-on-surface-variant">Focus</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-8 flex items-center gap-3">
+<button class="flex-1 md:flex-none px-6 py-3 rounded-full bg-surface-container-high text-on-surface font-bold text-sm hover:bg-surface-bright transition-all active:scale-95">
+                            Switch
+                        </button>
+<button class="flex-[2] md:flex-none px-8 py-3 rounded-full bg-gradient-to-br from-primary to-primary-dim text-on-primary font-extrabold text-sm primary-glow hover:brightness-110 transition-all active:scale-95">
+                            Finish
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Past Goals Section -->
+<section class="space-y-6">
+<h2 class="font-headline text-on-surface text-sm uppercase tracking-widest font-bold opacity-60">Echoes of Success</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Completed Goal Card -->
+<div class="bg-surface-container-low hover:bg-surface-container-high transition-all duration-300 p-6 rounded-2xl group flex flex-col justify-between h-full">
+<div class="space-y-4">
+<div class="flex justify-between items-start">
+<div class="w-10 h-10 flex items-center justify-center rounded-xl king-gradient shadow-lg">
+<span class="material-symbols-outlined text-on-surface text-2xl" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+</div>
+<span class="font-label text-error text-[10px] font-extrabold tracking-widest uppercase">King Rank</span>
+</div>
+<div>
+<h4 class="font-headline text-xl font-bold text-on-surface">Teacher's Certificate</h4>
+<p class="text-on-surface-variant text-sm mt-1">Achieved with distinction</p>
+</div>
+<div class="flex items-center gap-2">
+<div class="flex-1 h-1 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-error-dim w-full"></div>
+</div>
+<span class="text-[10px] font-bold text-on-surface-variant">200/200h</span>
+</div>
+</div>
+<div class="mt-6 flex items-center justify-between">
+<span class="flex items-center gap-1 text-[10px] font-bold text-tertiary-fixed-dim uppercase tracking-wider">
+<span class="material-symbols-outlined text-sm">verified</span>
+                            Completed
+                        </span>
+<button class="text-primary hover:bg-primary/10 px-4 py-2 rounded-lg transition-colors font-bold text-xs active:scale-95">
+                            Restart
+                        </button>
+</div>
+</div>
+<!-- Another Past Goal (Visual Filler) -->
+<div class="bg-surface-container-low hover:bg-surface-container-high transition-all duration-300 p-6 rounded-2xl flex flex-col justify-between opacity-60 hover:opacity-100 grayscale hover:grayscale-0">
+<div class="space-y-4">
+<div class="flex justify-between items-start">
+<div class="w-10 h-10 flex items-center justify-center rounded-xl bg-outline/20">
+<span class="material-symbols-outlined text-outline text-2xl">workspace_premium</span>
+</div>
+<span class="font-label text-outline text-[10px] font-extrabold tracking-widest uppercase">Silver Rank</span>
+</div>
+<div>
+<h4 class="font-headline text-xl font-bold text-on-surface">Daily Meditation</h4>
+<p class="text-on-surface-variant text-sm mt-1">30 Day Challenge</p>
+</div>
+<div class="flex items-center gap-2">
+<div class="flex-1 h-1 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-outline w-1/2"></div>
+</div>
+<span class="text-[10px] font-bold text-on-surface-variant">15/30d</span>
+</div>
+</div>
+<div class="mt-6 flex items-center justify-between">
+<span class="text-[10px] font-bold text-on-surface-variant uppercase tracking-wider">Abandoned</span>
+<button class="text-primary hover:bg-primary/10 px-4 py-2 rounded-lg transition-colors font-bold text-xs">
+                            Resume
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Stats Grid -->
+<section class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="bg-surface-container-low p-4 rounded-2xl">
+<p class="text-on-surface-variant text-[10px] font-bold uppercase tracking-widest">Total Focused</p>
+<p class="font-headline text-2xl font-extrabold text-on-surface mt-1">482h</p>
+</div>
+<div class="bg-surface-container-low p-4 rounded-2xl">
+<p class="text-on-surface-variant text-[10px] font-bold uppercase tracking-widest">Goals Reached</p>
+<p class="font-headline text-2xl font-extrabold text-secondary mt-1">12</p>
+</div>
+<div class="bg-surface-container-low p-4 rounded-2xl">
+<p class="text-on-surface-variant text-[10px] font-bold uppercase tracking-widest">Peak Streak</p>
+<p class="font-headline text-2xl font-extrabold text-primary mt-1">45d</p>
+</div>
+<div class="bg-surface-container-low p-4 rounded-2xl">
+<p class="text-on-surface-variant text-[10px] font-bold uppercase tracking-widest">Global Rank</p>
+<p class="font-headline text-2xl font-extrabold text-tertiary mt-1">#24</p>
+</div>
+</section>
+</main>
+<!-- FAB: Add New Goal -->
+<button class="fixed bottom-24 right-6 w-16 h-16 rounded-full bg-gradient-to-br from-primary to-primary-dim text-on-primary flex items-center justify-center shadow-[0_8px_32px_rgba(129,236,255,0.3)] z-[60] active:scale-90 transition-transform duration-200">
+<span class="material-symbols-outlined text-3xl font-bold">add</span>
+</button>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full z-50 rounded-t-2xl bg-[#091328]/60 backdrop-blur-xl shadow-[0_-4px_20px_rgba(6,14,32,0.5)] flex justify-around items-center px-4 py-3 pb-safe w-full">
+<!-- Home -->
+<a class="flex flex-col items-center justify-center text-[#6d758c] opacity-70 hover:text-[#81ecff] transition-all animate-pulse-subtle" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-['Inter'] text-[10px] uppercase tracking-widest font-bold mt-1">Home</span>
+</a>
+<!-- Goals (Active) -->
+<a class="flex flex-col items-center justify-center text-[#81ecff] bg-[#141f38] rounded-xl px-4 py-1 shadow-[0_0_15px_rgba(129,236,255,0.15)] animate-pulse-subtle" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">rebase_edit</span>
+<span class="font-['Inter'] text-[10px] uppercase tracking-widest font-bold mt-1">Goals</span>
+</a>
+<!-- Focus -->
+<a class="flex flex-col items-center justify-center text-[#6d758c] opacity-70 hover:text-[#81ecff] transition-all animate-pulse-subtle" href="#">
+<span class="material-symbols-outlined">timer</span>
+<span class="font-['Inter'] text-[10px] uppercase tracking-widest font-bold mt-1">Focus</span>
+</a>
+<!-- Ranks -->
+<a class="flex flex-col items-center justify-center text-[#6d758c] opacity-70 hover:text-[#81ecff] transition-all animate-pulse-subtle" href="#">
+<span class="material-symbols-outlined">workspace_premium</span>
+<span class="font-['Inter'] text-[10px] uppercase tracking-widest font-bold mt-1">Ranks</span>
+</a>
+</nav>
+</body></html>
