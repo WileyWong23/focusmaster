@@ -24,3 +24,7 @@ Thumbs.db
 
 # Project internal
 .codebuddy/
+
+# Scripts & tools (dev only)
+test-api.ps1
+generate-icons.js
