@@ -1,8 +1,2 @@
-[phases.setup]
-nixPkgs = ["...", "jdk8"]
-
-[phases.build]
-cmds = ["mvn clean install -DskipTests"]
-
-[start]
-cmd = "java -jar target/*.jar"
+[build]
+builder = "dockerfile"
